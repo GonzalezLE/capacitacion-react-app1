@@ -23,16 +23,18 @@ describe('pruebas en funciones de heroes',()=>{
   test('debe de retornar un arreglo con los heroes de DC', () => {
 
     const owners='DC';
-    const datos = heroes.fill((h) => h.owner === owners);
-    const heroesDC=getHeroesByOwner(owner);
+    const datos = heroes.filter((h) => h.owner === owners);
+    const heroesDC=getHeroesByOwner(owners);
     
     expect(heroesDC).toEqual(datos);
   })
 
- /*test('debe de retornar un arreglo con los heroes de Marvel ', () => {
+  test('debe de retornar un arreglo de 2 con los heroes de Marvel ', () => {
 
     const owner = 'Marvel';
     const heroesMarvel = getHeroesByOwner(owner);
-    expect(heroesMarvel.length).toBe(2)
-  })*/
+    
+    let tamano = heroesMarvel.length
+    expect(tamano).toBe(2)
+  })
 })
