@@ -10,7 +10,7 @@ const PrimeraApp = ({ saludo, subtitulo})=>{
   )
 }
 PrimeraApp.propTypes={
-  saludo: PropTypes.number.isRequired
+  saludo: PropTypes.string.isRequired
 };
 PrimeraApp.dedaultProps={
   subtitulo:'soy un sub titulo'
