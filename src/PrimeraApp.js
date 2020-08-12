@@ -13,6 +13,6 @@ PrimeraApp.propTypes={
   saludo: PropTypes.string.isRequired
 };
 PrimeraApp.dedaultProps={
-  subtitulo:'soy un sub titulo'
+  subtitulo:"soy un sub titulo"
 }
 export default PrimeraApp;
