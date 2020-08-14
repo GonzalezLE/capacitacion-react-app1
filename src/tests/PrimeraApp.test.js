@@ -8,7 +8,6 @@ describe('Pruebas con <PrimeraApp />', () => {
   test('debe de mostrar <PrimeraApp /> correctamente', () => {
     const saludo="Hola soy ,luis";
     const wraper =shallow(<PrimeraApp saludo={saludo}/>)
-
     expect(wraper).toMatchSnapshot();
   });
 
